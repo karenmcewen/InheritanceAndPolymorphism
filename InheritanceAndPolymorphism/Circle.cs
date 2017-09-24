@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace InheritanceAndPolymorphism
 {
-    class Circle : IShape
+    class Circle : IShape //inherits from the interface IShape
     {
-        //field
-        public static int circleNumber; //number of circles - this is a field only in this class - static means only one instance of this variable
+        //FIELDS - only need those that are specific to this class
+        //number of circles -  - static means only one instance of this variable
+        public static int circleNumber; 
         
-        //properties
+        //PROPERTIES
         public int CircleNumber
         {
             get { return this.CircleNumber; }
@@ -21,13 +22,15 @@ namespace InheritanceAndPolymorphism
         public string Name { get; set; }
         public double Radius { get; set; }
         
-        //constructor
+        //CONSTRUCTOR
         public Circle(string name, double radius)
         {
             Name = name;
             Radius = radius;
-            circleNumber += 1;
+            circleNumber += 1; //number increases with each new instance of Circle created
         }
+
+        //METHODS
         public double Area()
         {
             double pi = Math.PI; //MATH is a special system class we have access to

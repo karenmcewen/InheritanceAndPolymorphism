@@ -8,7 +8,8 @@ namespace InheritanceAndPolymorphism
 {
     interface IShape
     {
-        
+        //you can have as many interfaces as you want
+        //INTERFACES name convention - begin with "I"
 
         //METHODS
         void GetInfo(); //interface methods cannot have a body {}

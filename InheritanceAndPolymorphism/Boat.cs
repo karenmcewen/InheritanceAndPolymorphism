@@ -8,7 +8,7 @@ namespace InheritanceAndPolymorphism
 {
     class Boat:Vehicle //creates class Boat as a derived class of Vehicle
     {
-        private double waterDrag; //don't need a property for this because creating within constructor???
+        private double waterDrag; //don't need a property for this because not using outside of this class??
         
         //CONSTRUCTOR
         public Boat(int seats, int carryingCapacity, string color, double movementSpeed, double waterDrag)

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InheritanceAndPolymorphism
 {
-    class Car:Vehicle
+    class Car:Vehicle //class Child:Parent
     {
         //FIELDS
         private int numberOfWheels;
